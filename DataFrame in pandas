@@ -1,0 +1,6 @@
+# DataFrame in pandas
+import pandas as pd
+# petrol in liter and price 
+data={"petrol":[1,2,3,4,5],"Ruppes":[105,210,315,420,525]}
+df=pd.DataFrame(data,index=["a","b","c","d","e"])
+print(df.loc["a"])

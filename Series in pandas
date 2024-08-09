@@ -1,0 +1,6 @@
+#Series in python by using pandas
+import pandas as pd
+# list
+a=[1,2,3,4,5]
+myvar=pd.Series(a,index=("x","y","z","a","b"))# myvar is a object
+print(myvar)

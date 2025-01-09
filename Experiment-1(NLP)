@@ -1,0 +1,29 @@
+import re
+# search() Function
+text="i am sujal"
+x=re.search("^i.*sujal$",text)
+if x:
+    print("match found")
+else:
+    print("match is not found")
+
+# findall() Function
+text1=" hello good at 12pm  morning"
+y=re.findall("[a-m]",text1)
+print(y)
+
+z=re.findall("\d",text1)
+print(z)
+
+# sub() Function
+l=re.sub("sujal","sahil",text)
+print(l)
+
+# split() Function
+
+txt2 = "The rain in Spain"
+x = re.split("\s", txt2)
+print(x)
+
+
+

@@ -1,0 +1,11 @@
+# Multiple Exception Handling
+
+l=[1,2,3]
+l.append(5)
+try:
+   # print(l.upper())
+  # print(l[10])
+   print(L(2))
+except (AttributeError,IndexError,NameError):
+    print("Handling error")
+print(len(l))

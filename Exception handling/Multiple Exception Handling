@@ -6,6 +6,6 @@ try:
    # print(l.upper())
   # print(l[10])
    print(L(2))
-except (AttributeError,IndexError,NameError):
-    print("Handling error")
+except (AttributeError,IndexError,NameError) as e:
+    print(f"Error Type: {type(e).__name__}")
 print(len(l))

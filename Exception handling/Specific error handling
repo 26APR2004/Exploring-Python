@@ -1,0 +1,18 @@
+# #Specific error handling
+a="Mumbai"
+print(a[0])
+try:
+    print(a[10])
+except IndexError:
+    print("Handling Index error")
+print(a[-1])
+
+print("----------------------------------------------")
+
+l=[1,2,3]
+l.append(5)
+try:
+    print(l.upper())
+except AttributeError:
+    print("Handling Attribute error")
+print(len(l))

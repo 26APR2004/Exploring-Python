@@ -1,0 +1,13 @@
+#  Special Function:1. Lambda Functions 
+
+# Write Lambda Expression to add two numbers
+sum=lambda a,b:a+b
+print("Sum of number:",sum(12,3))
+
+#  Write Lambda Expression to Sq and cub numbers
+result=lambda c:(c**2 ,c**3)
+print("Sqr & cub of number:",result(2))
+
+# Write Lambda Expression to even or odd numbers
+EvenOdd=lambda e:'Even'if e%2==0 else 'odd'
+print("Even or odd  number:",EvenOdd(3))

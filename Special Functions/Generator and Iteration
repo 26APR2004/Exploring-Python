@@ -1,0 +1,28 @@
+# Generator
+
+# Generate a squre of a given number of list
+l=[1,2,3]
+
+def func(l):
+    for i in l:
+        yield i*i
+print(list(func(l)))
+
+#Generate a tuple of numeric values in the given list
+items=["sujal",12,"Rohit",34.6,"aksh",True]
+
+def func(items):
+    for i in items:
+        if isinstance(i,(int,float)):
+            yield i
+print(tuple(func(items)))
+
+# Fibonnacci number
+
+def fib(num):
+    n1=0
+    n2=1  
+    for i in range(num):
+        yield n1
+        n1,n2=n2,n1+n2
+print(list(fib(10)))

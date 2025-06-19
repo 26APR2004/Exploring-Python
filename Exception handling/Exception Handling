@@ -1,0 +1,31 @@
+# Handling  ZeroDivisionError Exception 
+
+a=20
+b=0
+print("Start")
+try:
+    print(a/b)
+except:
+    print("Handling Exsception")
+print("End")
+
+# Handling  AttributeError Exception 
+s="Sujal"
+print(len(s))
+try:
+    print(s.pop)
+except:
+    print("Method is not present")
+print(s.upper())
+
+# Handling TypeError Exception 
+s="Hello"
+d=4
+print("Start")
+try:
+    print(s+d)
+except:
+    print("Typing error")
+print("End")
+
+

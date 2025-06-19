@@ -1,0 +1,36 @@
+Exception handling 
+
+# No Error
+a=20
+b=5
+print("Start")
+print(a/b)
+print("End")
+
+# ZeroDivisionError
+A=20
+B=0
+print("Start")
+print(A/B)
+print("End")
+
+#TypeError
+s="Hello"
+t=4
+print("Start")
+print(s+t)
+print("End")
+
+# AttributeError
+l=[10,20,30]
+print(l.upper())
+
+#NameError: name 'sa' is not defined
+d=100
+print(sa)
+
+#KeyError: 'mango'
+d={"apple":10}
+print(d["mango"])
+#Index erroe ...
+

@@ -1,0 +1,52 @@
+### 1D signal
+import numpy as np
+sampling_rate=11001
+duration=1.0
+frequency=4.0
+
+time=np.linspace(0,duration,int(duration*sampling_rate),endpoint=False)
+amplitude=np.sin(2*np.pi*frequency*time)
+print(amplitude.shape)
+
+## Sensor Data
+# Simulate temp reading over 1o min
+time_points=np.arange(0,600,1)
+temp_data=25+5*np.sin(time_points/60)+np.random.normal(0,0.01,len(time_points))
+print(temp_data)
+
+## 2D signals
+# GrayScale Image
+
+#Simulate a simple 5*5 grayscale image
+
+image_data_gray=np.array([[0,50,100,150,200],
+                          [20,70,120,170,220],
+                          [40,90,140,190,240],
+                          [60,110,160,210,255],
+                          [80,130,180,230,255]],dtype=np.uint8)
+print(image_data_gray.shape)
+
+# Color Images
+#Simulate a 3*3 RGB image
+
+color_image=np.zeros((3,3,3),dtype=np.uint8)
+color_image[1,1]=[255,0,0]
+color_image[0,0]=[0,255,0]
+color_image[2,2]=[0,0,255]
+
+print(color_image.shape)
+
+# Amplitude Scaling
+# Signal Addtion and Subtraction
+
+signal1=np.array([1,2,3])
+signal2=np.array([4,5,6])
+summed=signal1+signal2
+print(summed)
+
+# Cropping / Windowing
+
+long_signal=np.array([10,20,30,40,50,60,70,80])
+cropped_signal=long_signal[2:6]
+print(cropped_signal)
+
